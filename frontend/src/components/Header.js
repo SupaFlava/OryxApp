@@ -17,15 +17,15 @@ const Header = () => {
     <header>
       <>
         <div className="menu-bar">
-          <Navbar bg="menu-bar" collapseOnSelect expand="lg">
+          <Navbar bg="menu-bar" fixed="top" collapseOnSelect expand="sm">
             <Container>
               <LinkContainer to="/">
                 <Navbar.Brand className="brand">
                   <h3>Oryx</h3>
                 </Navbar.Brand>
               </LinkContainer>
-              <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
+              <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+              <Navbar.Collapse id="responsive-navbar-nav">
                 <Route
                   render={({ history }) => <SearchBox history={history} />}
                 />

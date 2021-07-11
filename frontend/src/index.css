@@ -29,7 +29,6 @@ h2 {
   display: flex;
 }
 .carousel {
-  position: relative;
   border: 0.5vmin solid;
 
   border-image: linear-gradient(to left, #70e1f5, #ffd194);
@@ -64,7 +63,6 @@ h3 {
   padding: 0px;
   margin: 10px;
   margin-left: 10rem;
-  position: relative;
 }
 .carousel img {
   height: 300px;
@@ -163,7 +161,7 @@ body {
 .productCard {
   border-color: #ffd194;
   height: 28rem;
-  height: 28rem;
+  width: 28rem;
 }
 .productImg {
   border: soli 2 px black !important;
@@ -209,4 +207,24 @@ input[type="file"] {
   padding: 5px 12px;
   cursor: pointer;
   color: #ffd194;
+}
+@media only screen and (max-width: 768px) {
+  .carousel {
+    display: none;
+  }
+  .productCard {
+    border-color: #ffd194;
+    height: 20rem;
+    width: 18rem;
+  }
+  .productCard img {
+    height: 10rem;
+  }
+}
+
+#responsive-navbar-nav {
+  padding-right: 100;
+  border-radius: 2px;
+  margin-top: -1.5rem;
+  background: linear-gradient(to right, #70e1f5, #ffd194);
 }
