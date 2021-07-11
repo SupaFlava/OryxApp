@@ -17,7 +17,7 @@ const Header = () => {
     <header>
       <>
         <div className="menu-bar">
-          <Navbar bg="menu-bar" fixed="top" collapseOnSelect expand="sm">
+          <Navbar bg="menu-bar" collapseOnSelect expand="sm">
             <Container>
               <LinkContainer to="/">
                 <Navbar.Brand className="brand">

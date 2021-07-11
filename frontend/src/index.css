@@ -30,6 +30,7 @@ h2 {
 }
 .carousel {
   border: 0.5vmin solid;
+  position: relative;
 
   border-image: linear-gradient(to left, #70e1f5, #ffd194);
   border-image-slice: 1;
@@ -151,17 +152,13 @@ h3 {
   font-family: "Cabin", sans-serif !important;
   color: #110e0d !important;
 }
-/*.nav-link:hover {
-  color: #70e1f5 !important;
-} */
 
 body {
   font-family: "Open Sans", sans-serif;
 }
 .productCard {
   border-color: #ffd194;
-  height: 28rem;
-  width: 28rem;
+  height: 28em;
 }
 .productImg {
   border: soli 2 px black !important;
@@ -214,16 +211,18 @@ input[type="file"] {
   }
   .productCard {
     border-color: #ffd194;
-    height: 20rem;
-    width: 18rem;
+    height: 20em;
+    width: 19em;
   }
   .productCard img {
-    height: 10rem;
+    height: 10em;
+    width: 12em;
   }
   #responsive-navbar-nav {
     padding-right: 100;
     border-radius: 2px;
     margin-top: -1.5rem;
     background: linear-gradient(to right, #70e1f5, #ffd194);
+    z-index: 1;
   }
 }
