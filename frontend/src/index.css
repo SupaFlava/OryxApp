@@ -220,11 +220,10 @@ input[type="file"] {
   .productCard img {
     height: 10rem;
   }
-}
-
-#responsive-navbar-nav {
-  padding-right: 100;
-  border-radius: 2px;
-  margin-top: -1.5rem;
-  background: linear-gradient(to right, #70e1f5, #ffd194);
+  #responsive-navbar-nav {
+    padding-right: 100;
+    border-radius: 2px;
+    margin-top: -1.5rem;
+    background: linear-gradient(to right, #70e1f5, #ffd194);
+  }
 }
