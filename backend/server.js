@@ -10,11 +10,11 @@ import productRoutes from "./routes/productRoutes.js";
 import userRoutes from "./routes/userRoute.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
-
+import cors from "cors";
 dotenv.config();
 connectDB();
 const app = express();
-
+app.use(cors());
 app.use(express.json());
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
