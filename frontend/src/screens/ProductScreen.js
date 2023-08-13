@@ -60,8 +60,6 @@ const ProductScreen = ({ match, history }) => {
       })
     );
   };
-  console.log(rating);
-  console.log(comment);
 
   return (
     <>
