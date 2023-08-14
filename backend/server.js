@@ -15,7 +15,13 @@ import cors from "cors";
 dotenv.config();
 connectDB();
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://oryxappfront.onrender.com",
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 app.use(express.json());
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
